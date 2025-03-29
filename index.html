@@ -3,9 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NGZ Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    ngz
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">NGZ COIN</a>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#offer">Special Offer</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>To the Moon and Beyond!</h1>
+                <p class="subtitle">Invest today in the most explosive meme coin of 2025</p>
+                <div class="cta-container">
+                    <a href="#offer" class="cta-button">Get Started Now</a>
+                    <p class="limited-offer">First 5 investors receive exclusive physical coin!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why NGZ Coin?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Exponential Growth</h3>
+                    <p>Proven track record of 1000% monthly growth</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Exclusive Rewards</h3>
+                    <p>Early investors get unique physical collectibles</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Technology</h3>
+                    <p>Blockchain-powered security with NFC verification</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tutorial" id="tutorial">
+        <div class="container">
+            <h2>How to Buy/Sell NGZ Coin</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Connect Wallet</h3>
+                    <p>Install Phantom Wallet and connect to Solana network. You can buy SOLANA in the phantom app.</p>
+                    <a href="https://phantom.com" target="_blank" class="step-button">Get Phantom</a>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Buy NGZ Coin</h3>
+                    <p>Visit swap platform and paste NGZ address:</p>
+                    <div class="address-box">
+                        <input type="text" id="tokenAddress" value="4QMhsk...Ny92j1" readonly>
+                        <button onclick="copyAddress()" class="copy-button">Copy</button>
+                    </div>
+                    <div class="swap-links">
+                        <a href="https://jup.ag" target="_blank" class="swap-button">Buy on Jup.ag</a>
+                        <a href="https://raydium.io" target="_blank" class="swap-button">Buy on Raydium</a>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Sell Instructions</h3>
+                    <p>When price increases, reverse the process on same platform</p>
+                    <div class="price-alert">
+                        <i class="fas fa-bell"></i>
+                        Set price alerts in your wallet
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offer" class="nfc-offer">
+        <div class="container">
+            <h2>Limited Edition NFC Coin</h2>
+            <div class="coin-container">
+                <div class="coin-card">
+                    <div class="coin-face coin-front">
+                        <img src="Névtelen terv (2).png" alt="NGZ Coin Design">
+                    </div>
+                    <div class="coin-face coin-back">
+                        <p>NFT-Verified Collectible</p>
+                        <p>Unique Serial Number</p>
+                        <p>3D Printed Metal</p>
+                    </div>
+                </div>
+            </div>
+            <p class="offer-details">First 5 investors who purchase €100 worth of coins receive this exclusive collectible</p>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I purchase?</h3>
+                    <p>You have to buy SOLANA and swap to NGZ Coin</p><a href="#tutorial">More about this</a>
+                </div>
+                <div class="faq-item">
+                    <h3>When will I receive my physical coin?</h3>
+                    <p>Physical coins ship within 7 business days after verification</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is this investment safe?</h3>
+                    <p>All transactions are secured through blockchain technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NGZ Coin. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
